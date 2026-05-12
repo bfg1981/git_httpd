@@ -1,3 +1,3 @@
 [submodule "release"]
 	path = release
-	url = ./release/
+	url = git@github.com:bfg1981/DockerBuildAndRelease.git
