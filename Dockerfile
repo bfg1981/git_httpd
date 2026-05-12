@@ -2,7 +2,7 @@ FROM alpine as git_httpd
 
 ENTRYPOINT ["/entrypoint/entrypoint.sh"]
 WORKDIR /var/www/localhost/
-RUN apk --no-cache add git apache2-proxy py3-waitress
+RUN apk --no-cache add git apache2-proxy py3-flask py3-six py3-waitress
 
 #Remove in final build
 RUN apk add bash nano
